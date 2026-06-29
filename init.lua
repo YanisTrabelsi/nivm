@@ -21,3 +21,9 @@ vim.o.relativenumber = true
 vim.o.expandtab = false
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
+---------------------------------------
+vim.o.statuscolumn = "%!v:lua.require('statuscolumn').render()"
+vim.opt.fillchars = { eob = " " }
+---------------------------------------
+vim.o.cursorline = true
+vim.api.nvim_set_hl(0, "CursorLine", { underline = true, sp = "#b9f4a9" })
